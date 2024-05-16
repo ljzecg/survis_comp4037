@@ -1,1 +1,1 @@
-const availablePdf = [];
+define({availablePdf: ["Chen2023","Gao2020","Kong2023","Li2020","Luo2023","Luo2024","Yang2022","Yu2023","Zha2021","Zhang2023"]});
