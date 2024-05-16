@@ -443,6 +443,7 @@ var figue = function () {
 				}
 				
 			}
+			//alert(centroids);
 			
 			// update the degree of membership of each vector
 			previousMembershipMatrix = membershipMatrix.copy() ;
@@ -461,6 +462,8 @@ var figue = function () {
 						membershipMatrix.mtx[i][j] = 1 / membershipMatrix.mtx[i][j] ;
 				}
 			}
+			
+			//alert(membershipMatrix) ;
 			
 			// check convergence
 			max = -1 ;

@@ -1,9 +1,9 @@
 .entry {
     margin-bottom: 5px;
-    background: var(--bgColor2);
+    background: #EEEEEE;
     counter-increment: problem;
-    border: var(--strongBorder);
-    border-left: 7px solid black;
+    border: 1px solid black;
+    border-left: 5px solid black;
     padding: 10px 10px 0;
     overflow: auto;
 }
@@ -17,7 +17,7 @@
 }
 
 .entry .thumb {
-    border: var(--lightBorder);
+    border: 1px solid silver;
     max-width: 100px;
 }
 
@@ -84,6 +84,9 @@
     background: #DDDDDD;
 }
 
+.entry .tags .add_tag {
+}
+
 .entry .tags .add_tag .tag_input {
     display: none;
 }
@@ -111,7 +114,7 @@
 
 .entry .comment {
     font-size: 10pt;
-    border: var(--lightBorder);
+    border: 1px solid silver;
     padding: 5px;
 }
 
@@ -122,12 +125,16 @@
 .entry .links {
     font-size: 8pt;
     float: right;
+    #border: 1px solid black;
 }
 
 .entry .links a:before {
     content: "|";
     margin-right: 5px;
     margin-left: 5px;
+}
+
+.entry .links a {
 }
 
 .entry .links a:visited {
@@ -166,13 +173,9 @@
 }
 
 .entry .button {
-    margin: 0 10px 1px 0;
+    margin: 0 10px 0 0;
     border: none;
     border-radius: 0;
-}
-
-.entry .button.active {
-    background: red;
 }
 
 .entry .citation_incoming_frequency, .entry .citation_outgoing_frequency {
@@ -203,10 +206,10 @@
 
 .entry .bibtex_warnings {
     font-size: 9pt;
-    background: var(--warningBgColor);
-    margin: 0 0 2px;
+    background: #fcefa1;
+    margin: 0;
     padding: 2px;
-    border: var(--lightBorder);
+    border: 1px solid silver;
     clear: both;
 }
 
@@ -220,39 +223,8 @@
     margin: 0;
 }
 
-.entry .bibtex_warnings ul li {
+.entry .bibtex_warnings li {
     margin-left: 20px;
     list-style-type: square;
     cursor: pointer;
-}
-
-.entry .bibtex_warnings ul li:hover {
-    background-color: #d2c68a;
-}
-
-.entry .bibtex_warnings ul ul li {
-    margin-left: 40px;
-    list-style-type: circle;
-}
-
-.entry .bibtex_add_field  {
-    font-size: 9pt;
-    margin: 2px;
-}
-
-.entry .CodeMirror {
-    margin: 0 0 2px;
-}
-
-.entry .citation_control {
-    float: right;
-}
-
-.entry .citation {
-    background: white;
-    font-size: 10pt;
-    margin: 0 0 2px;
-    padding: 2px;
-    border: var(--lightBorder);
-    clear: both;
 }
